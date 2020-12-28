@@ -34,6 +34,7 @@ const BarcodeScannerComponent = ({
 
   return (
     <Webcam
+      audio={false}
       width={width}
       height={height}
       ref={webcamRef}
