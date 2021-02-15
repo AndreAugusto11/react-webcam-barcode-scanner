@@ -42,6 +42,7 @@ const BarcodeScannerComponent = ({
       videoConstraints={{
         facingMode: 'environment'
       }}
+      mirrored={true}
     />
   )
 }
