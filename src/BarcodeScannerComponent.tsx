@@ -5,7 +5,8 @@ import Webcam from 'react-webcam'
 const BarcodeScannerComponent = ({
   width,
   height,
-  onUpdate
+  onUpdate,
+  ...props
 }: {
   width: number;
   height: number;
@@ -39,10 +40,11 @@ const BarcodeScannerComponent = ({
       height={height}
       ref={webcamRef}
       screenshotFormat="image/png"
+      mirrored={true}
       videoConstraints={{
         facingMode: 'environment'
       }}
-      mirrored={true}
+      {...props}
     />
   )
 }

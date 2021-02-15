@@ -1,6 +1,6 @@
 import React from 'react';
 import { Result } from '@zxing/library';
-declare const BarcodeScannerComponent: ({ width, height, onUpdate }: {
+declare const BarcodeScannerComponent: ({ width, height, onUpdate, ...props }: {
     width: number;
     height: number;
     onUpdate: (arg0: unknown, arg1?: Result) => void;
