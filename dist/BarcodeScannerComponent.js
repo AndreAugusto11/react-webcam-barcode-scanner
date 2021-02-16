@@ -35,7 +35,7 @@ const BarcodeScannerComponent = (_a) => {
     react_1.default.useEffect(() => {
         setInterval(capture, 100);
     }, []);
-    return (react_1.default.createElement(react_webcam_1.default, Object.assign({ audio: false, width: width, height: height, ref: webcamRef, screenshotFormat: "image/png", mirrored: true, videoConstraints: {
+    return (react_1.default.createElement(react_webcam_1.default, Object.assign({ audio: false, width: width, height: height, ref: webcamRef, screenshotFormat: "image/png", videoConstraints: {
             facingMode: 'environment'
         } }, props)));
 };

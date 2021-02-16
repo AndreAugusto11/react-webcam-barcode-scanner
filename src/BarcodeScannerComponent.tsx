@@ -40,7 +40,6 @@ const BarcodeScannerComponent = ({
       height={height}
       ref={webcamRef}
       screenshotFormat="image/png"
-      mirrored={true}
       videoConstraints={{
         facingMode: 'environment'
       }}
